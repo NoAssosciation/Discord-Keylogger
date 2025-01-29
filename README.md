@@ -27,7 +27,6 @@ You can follow [this](https://support.discord.com/hc/en-us/articles/204849977-Ho
 
 Got to your servers settings select Intergrations >> Webhooks and create a new Webhook. You can also customize it and give it a name and a featured icon. Make sure to copy the URL, you will need it later.
 
-![screenshot](https://i.ibb.co/0JWHdWz/Capture.png)
 
 ## Edit keylogger.py
 Its time to edit the python script. Now that you have the Webhook URL, you can add that to the file. Also make sure to add your desired timeframe that they keylogger will report to you. You have to add the time in seconds so you can use [this](https://www.calculatorsoup.com/calculators/conversions/time.php) converter to get the correct time in seconds.
@@ -51,7 +50,6 @@ To execute the script all you have to do is run:
 python keylogger.py
 ```
 If all goes right, you should see a report on discord after the seconds you have specified on the script have passed.
-![rick](https://i.ibb.co/ckF9jbk/rick.png)
 
 ## Compile the script
 
